@@ -1,0 +1,208 @@
+angel\211.png
+backpack\800.png
+basket\1117.png
+bookshelf\2057.png
+beer-mug\1454.png
+bell\1523.png
+binoculars\1831.png
+armchair\549.png
+ant\280.png
+alarm clock\144.png
+bicycle\1716.png
+bell\1545.png
+banana\817.png
+bathtub\1171.png
+arm\408.png
+arm\422.png
+ant\247.png
+bench\1653.png
+backpack\783.png
+bee\1426.png
+bell\1525.png
+backpack\773.png
+bear (animal)\1204.png
+bookshelf\2070.png
+apple\364.png
+ant\279.png
+bell\1574.png
+angel\187.png
+ant\242.png
+binoculars\1777.png
+backpack\775.png
+bicycle\1758.png
+alarm clock\134.png
+backpack\769.png
+airplane\72.png
+banana\874.png
+binoculars\1778.png
+bell\1572.png
+arm\458.png
+barn\893.png
+bookshelf\2051.png
+baseball bat\987.png
+book\1941.png
+banana\855.png
+bicycle\1731.png
+axe\678.png
+arm\478.png
+ant\290.png
+ashtray\579.png
+bee\1386.png
+baseball bat\1025.png
+arm\453.png
+blimp\1915.png
+backpack\743.png
+apple\395.png
+bee\1361.png
+bed\1302.png
+airplane\77.png
+axe\696.png
+apple\369.png
+book\1938.png
+baseball bat\1000.png
+book\1960.png
+binoculars\1781.png
+banana\806.png
+apple\355.png
+blimp\1920.png
+bear (animal)\1208.png
+axe\703.png
+blimp\1866.png
+airplane\74.png
+angel\169.png
+beer-mug\1495.png
+airplane\57.png
+banana\829.png
+bathtub\1160.png
+bear (animal)\1251.png
+binoculars\1823.png
+banana\834.png
+bookshelf\2059.png
+bathtub\1149.png
+barn\949.png
+alarm clock\140.png
+bed\1333.png
+apple\400.png
+book\1946.png
+banana\869.png
+bench\1648.png
+bell\1587.png
+basket\1082.png
+beer-mug\1444.png
+book\1928.png
+beer-mug\1485.png
+basket\1093.png
+bed\1304.png
+backpack\753.png
+ant\282.png
+binoculars\1806.png
+book\1964.png
+bench\1613.png
+basket\1115.png
+blimp\1881.png
+backpack\746.png
+axe\711.png
+barn\883.png
+angel\239.png
+axe\685.png
+bed\1289.png
+ashtray\621.png
+bench\1640.png
+ashtray\569.png
+alarm clock\110.png
+bear (animal)\1219.png
+beer-mug\1483.png
+book\1961.png
+barn\919.png
+arm\452.png
+barn\937.png
+apple\348.png
+basket\1046.png
+bee\1402.png
+bear (animal)\1255.png
+bed\1354.png
+airplane\67.png
+bed\1306.png
+alarm clock\114.png
+alarm clock\107.png
+bookshelf\2026.png
+angel\231.png
+ashtray\573.png
+bathtub\1177.png
+barn\918.png
+bench\1633.png
+binoculars\1771.png
+angel\234.png
+bench\1680.png
+bathtub\1141.png
+basket\1047.png
+bear (animal)\1216.png
+bookshelf\2001.png
+blimp\1852.png
+armchair\490.png
+armchair\512.png
+blimp\1853.png
+arm\415.png
+barn\924.png
+bathtub\1156.png
+basket\1069.png
+airplane\43.png
+baseball bat\1005.png
+airplane\28.png
+basket\1055.png
+blimp\1862.png
+armchair\481.png
+binoculars\1824.png
+baseball bat\1018.png
+armchair\553.png
+alarm clock\108.png
+axe\673.png
+armchair\499.png
+bicycle\1686.png
+bench\1673.png
+ashtray\609.png
+beer-mug\1479.png
+bear (animal)\1238.png
+ashtray\585.png
+blimp\1854.png
+armchair\538.png
+bookshelf\2029.png
+bookshelf\2053.png
+axe\702.png
+baseball bat\1010.png
+barn\890.png
+bee\1421.png
+bathtub\1129.png
+bee\1385.png
+bee\1399.png
+airplane\22.png
+axe\684.png
+angel\161.png
+bicycle\1713.png
+apple\389.png
+ashtray\638.png
+bed\1346.png
+ashtray\636.png
+alarm clock\86.png
+beer-mug\1471.png
+bell\1524.png
+armchair\482.png
+baseball bat\1011.png
+ant\273.png
+bicycle\1744.png
+apple\347.png
+bicycle\1706.png
+arm\405.png
+bee\1380.png
+bench\1642.png
+baseball bat\1002.png
+angel\235.png
+bed\1360.png
+bell\1540.png
+bear (animal)\1218.png
+book\1922.png
+beer-mug\1500.png
+banana\856.png
+bicycle\1727.png
+ant\300.png
+bathtub\1121.png
