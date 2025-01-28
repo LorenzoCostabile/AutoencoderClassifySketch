@@ -6,8 +6,12 @@ name = "pypi"
 [packages]
 matplotlib = "*"
 scikit-learn = "*"
+keras = "*"
+opencv-python = "*"
+protobuf = "<=3.20.1"
+tensorflow-gpu = "==2.3.0"
 
 [dev-packages]
 
 [requires]
-python_version = "3.12"
+python_version = "3.8"

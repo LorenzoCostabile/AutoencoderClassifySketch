@@ -1,0 +1,1469 @@
+[
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6346153616905212,
+            "val_top_k": 0.7596153616905212,
+            "train_accuracy": 1.0,
+            "val_loss": 2.230189323425293,
+            "val_auc": 0.9089401364326477
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7788461446762085,
+            "train_accuracy": 1.0,
+            "val_loss": 2.0942165851593018,
+            "val_auc": 0.9100573062896729
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7788461446762085,
+            "train_accuracy": 1.0,
+            "val_loss": 2.1546852588653564,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.625,
+            "val_top_k": 0.7980769276618958,
+            "train_accuracy": 1.0,
+            "val_loss": 1.878221035003662,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 0.9993990659713745,
+            "val_loss": 2.1377885341644287,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6442307829856873,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 0.9975961446762085,
+            "val_loss": 2.219663143157959,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 0.9993990659713745,
+            "val_loss": 2.3038785457611084,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.5817307829856873,
+            "val_top_k": 0.7163461446762085,
+            "train_accuracy": 1.0,
+            "val_loss": 2.180635452270508,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7788461446762085,
+            "train_accuracy": 1.0,
+            "val_loss": 2.1049253940582275,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 0.9981971383094788,
+            "val_loss": 2.003291606903076,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 1.0,
+            "val_loss": 2.0968401432037354,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7596153616905212,
+            "train_accuracy": 1.0,
+            "val_loss": 1.9293726682662964,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6057692170143127,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 1.0,
+            "val_loss": 2.1213631629943848,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7836538553237915,
+            "train_accuracy": 1.0,
+            "val_loss": 2.061337947845459,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7692307829856873,
+            "train_accuracy": 1.0,
+            "val_loss": 2.193708658218384,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.625,
+            "val_top_k": 0.7884615659713745,
+            "train_accuracy": 0.9957932829856873,
+            "val_loss": 1.9588860273361206,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7692307829856873,
+            "train_accuracy": 1.0,
+            "val_loss": 2.201592445373535,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7836538553237915,
+            "train_accuracy": 0.996995210647583,
+            "val_loss": 2.1433916091918945,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 1.0,
+            "val_loss": 2.221461534500122,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.5865384340286255,
+            "val_top_k": 0.7403846383094788,
+            "train_accuracy": 1.0,
+            "val_loss": 2.2387380599975586,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7596153616905212,
+            "train_accuracy": 0.987379789352417,
+            "val_loss": 2.495994806289673,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.5913461446762085,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 1.0,
+            "val_loss": 2.0006463527679443,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7692307829856873,
+            "train_accuracy": 0.9993990659713745,
+            "val_loss": 2.1344501972198486,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 0.9981971383094788,
+            "val_loss": 2.303492546081543,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 1.0,
+            "val_loss": 2.2581613063812256,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.5961538553237915,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 1.0,
+            "val_loss": 2.184807538986206,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 1.0,
+            "val_loss": 2.192488670349121,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6346153616905212,
+            "val_top_k": 0.7692307829856873,
+            "train_accuracy": 1.0,
+            "val_loss": 1.9971318244934082,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.629807710647583,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 0.996995210647583,
+            "val_loss": 2.4564707279205322,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6153846383094788,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 1.0,
+            "val_loss": 1.9785606861114502,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6057692170143127,
+            "val_top_k": 0.7836538553237915,
+            "train_accuracy": 0.9993990659713745,
+            "val_loss": 2.199035882949829,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 1.0,
+            "val_loss": 2.04343581199646,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6346153616905212,
+            "val_top_k": 0.754807710647583,
+            "train_accuracy": 0.9987980723381042,
+            "val_loss": 2.0601296424865723,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7788461446762085,
+            "train_accuracy": 1.0,
+            "val_loss": 2.211737632751465,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.75,
+            "train_accuracy": 1.0,
+            "val_loss": 2.1270480155944824,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7980769276618958,
+            "train_accuracy": 1.0,
+            "val_loss": 1.955223560333252,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.745192289352417,
+            "train_accuracy": 0.9921875,
+            "val_loss": 2.570399761199951,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6153846383094788,
+            "val_top_k": 0.7692307829856873,
+            "train_accuracy": 0.9987980723381042,
+            "val_loss": 2.4463512897491455,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7836538553237915,
+            "train_accuracy": 0.9909855723381042,
+            "val_loss": 2.4912161827087402,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.5817307829856873,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 0.9993990659713745,
+            "val_loss": 2.2780842781066895,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6057692170143127,
+            "val_top_k": 0.7788461446762085,
+            "train_accuracy": 0.9939903616905212,
+            "val_loss": 2.2823596000671387,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6490384340286255,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 1.0,
+            "val_loss": 2.0071427822113037,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6346153616905212,
+            "val_top_k": 0.7596153616905212,
+            "train_accuracy": 0.996995210647583,
+            "val_loss": 2.5697519779205322,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7403846383094788,
+            "train_accuracy": 0.9987980723381042,
+            "val_loss": 2.4429101943969727,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7355769276618958,
+            "train_accuracy": 0.9807692170143127,
+            "val_loss": 2.624606132507324,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7596153616905212,
+            "train_accuracy": 0.9993990659713745,
+            "val_loss": 2.32891583442688,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7884615659713745,
+            "train_accuracy": 0.9939903616905212,
+            "val_loss": 2.4144842624664307,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6153846383094788,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 0.9987980723381042,
+            "val_loss": 2.2457199096679688,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7596153616905212,
+            "train_accuracy": 0.9921875,
+            "val_loss": 2.6610500812530518,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 0.9993990659713745,
+            "val_loss": 2.4762866497039795,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7884615659713745,
+            "train_accuracy": 0.9939903616905212,
+            "val_loss": 2.425872564315796,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6057692170143127,
+            "val_top_k": 0.7788461446762085,
+            "train_accuracy": 0.9993990659713745,
+            "val_loss": 2.2569639682769775,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6153846383094788,
+            "val_top_k": 0.7596153616905212,
+            "train_accuracy": 0.9939903616905212,
+            "val_loss": 2.468367576599121,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.625,
+            "val_top_k": 0.7980769276618958,
+            "train_accuracy": 1.0,
+            "val_loss": 2.197009801864624,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7788461446762085,
+            "train_accuracy": 0.9885817170143127,
+            "val_loss": 2.4875309467315674,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.5817307829856873,
+            "val_top_k": 0.745192289352417,
+            "train_accuracy": 0.995192289352417,
+            "val_loss": 2.7440106868743896,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7884615659713745,
+            "train_accuracy": 0.9819711446762085,
+            "val_loss": 2.481407642364502,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 0.9975961446762085,
+            "val_loss": 2.3906824588775635,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.8028846383094788,
+            "train_accuracy": 0.9855769276618958,
+            "val_loss": 2.3478634357452393,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6394230723381042,
+            "val_top_k": 0.7692307829856873,
+            "train_accuracy": 0.996995210647583,
+            "val_loss": 2.3592569828033447,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.7596153616905212,
+            "train_accuracy": 0.9879807829856873,
+            "val_loss": 2.5635147094726562,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.567307710647583,
+            "val_top_k": 0.7259615659713745,
+            "train_accuracy": 0.9987980723381042,
+            "val_loss": 2.7446136474609375,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.5865384340286255,
+            "val_top_k": 0.7692307829856873,
+            "train_accuracy": 0.9921875,
+            "val_loss": 2.6163952350616455,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 0.9861778616905212,
+            "val_loss": 2.6461052894592285,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6394230723381042,
+            "val_top_k": 0.7836538553237915,
+            "train_accuracy": 0.9909855723381042,
+            "val_loss": 2.3051111698150635,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.005,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.5961538553237915,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 0.9981971383094788,
+            "val_loss": 2.3642561435699463,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6057692170143127,
+            "val_top_k": 0.7740384340286255,
+            "train_accuracy": 0.9801682829856873,
+            "val_loss": 2.596405267715454,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.620192289352417,
+            "val_top_k": 0.8028846383094788,
+            "train_accuracy": 0.9987980723381042,
+            "val_loss": 2.487474203109741,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.5913461446762085,
+            "val_top_k": 0.7884615659713745,
+            "train_accuracy": 0.9963942170143127,
+            "val_loss": 2.4596519470214844,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0002,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7932692170143127,
+            "train_accuracy": 0.9963942170143127,
+            "val_loss": 2.2580771446228027,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0003,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6009615659713745,
+            "val_top_k": 0.7884615659713745,
+            "train_accuracy": 0.9885817170143127,
+            "val_loss": 2.484926700592041,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64
+            ],
+            "dropout_rate": 0.3,
+            "l2_reg": 0.008,
+            "learning_rate": 0.0003,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.6057692170143127,
+            "val_top_k": 0.8028846383094788,
+            "train_accuracy": 0.987379789352417,
+            "val_loss": 2.415576696395874,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64,
+                32
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.5865384340286255,
+            "val_top_k": 0.7644230723381042,
+            "train_accuracy": 0.9585336446762085,
+            "val_loss": 2.640709400177002,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64,
+                32
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0001,
+            "batch_size": 32
+        },
+        "metrics": {
+            "val_accuracy": 0.5625,
+            "val_top_k": 0.682692289352417,
+            "train_accuracy": 0.9777644276618958,
+            "val_loss": 2.8420920372009277,
+            "val_auc": null
+        }
+    },
+    {
+        "params": {
+            "dense_layers": [
+                256,
+                128,
+                64,
+                32
+            ],
+            "dropout_rate": 0.25,
+            "l2_reg": 0.003,
+            "learning_rate": 0.0002,
+            "batch_size": 16
+        },
+        "metrics": {
+            "val_accuracy": 0.6105769276618958,
+            "val_top_k": 0.7932692170143127,
+            "train_accuracy": 0.9693509340286255,
+            "val_loss": 2.557321786880493,
+            "val_auc": null
+        }
+    }
+]
