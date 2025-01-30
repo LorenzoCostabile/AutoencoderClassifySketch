@@ -6,6 +6,8 @@ import cv2
 import os
 import numpy as np
 from tensorflow.keras import backend as K
+from train import ssim_loss
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 def create_classifier_head(input_shape, num_classes):
     inputs = Input(shape=input_shape)
@@ -14,24 +16,20 @@ def create_classifier_head(input_shape, num_classes):
     # Normalización por lotes
     x = tf.keras.layers.BatchNormalization()(x)
     
-    # Primera capa densa más grande con menos regularización
-    x = Dense(256, activation='relu', 
-              kernel_regularizer=tf.keras.regularizers.l2(0.005))(x)  # Reducida la regularización L2
+    x = Dense(256, activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.005))(x)
     x = tf.keras.layers.BatchNormalization()(x)
-    x = tf.keras.layers.Dropout(0.2)(x)  # Reducido el dropout
-    
-    # Segunda capa densa
-    x = Dense(128, activation='relu',
-              kernel_regularizer=tf.keras.regularizers.l2(0.005))(x)
+    x = tf.keras.layers.Dropout(0.3)(x)
+
+    x = Dense(128, activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.005))(x)
     x = tf.keras.layers.BatchNormalization()(x)
-    x = tf.keras.layers.Dropout(0.2)(x)
+    x = tf.keras.layers.Dropout(0.3)(x)
     
     outputs = Dense(num_classes, activation='softmax')(x)
     model = Model(inputs=inputs, outputs=outputs)
     return model
 
 def load_autoencoder(path):
-    return load_model(path)
+    return load_model(path, custom_objects={'ssim_loss': ssim_loss})
 
 def get_encoder_from_autoencoder(autoencoder):
     # Obtener la entrada del autoencoder
@@ -46,6 +44,9 @@ def get_encoder_from_autoencoder(autoencoder):
     # Congelar todas las capas del encoder
     for layer in encoder.layers:
         layer.trainable = False
+
+    for layer in encoder.layers[-3:]:  
+        layer.trainable = True
         
     return encoder
 
@@ -125,6 +126,16 @@ if __name__ == "__main__":
     print(f"Forma de salida del autoencoder: {autoencoder.output_shape}")
     classifier = create_classifier(autoencoder, num_classes)
     
+    datagen = ImageDataGenerator(
+        rotation_range=15,    # Rotación de hasta 15 grados
+        width_shift_range=0.1, # Traslación horizontal
+        height_shift_range=0.1, # Traslación vertical
+        zoom_range=0.2,        # Zoom aleatorio
+        horizontal_flip=True,  # Volteo horizontal
+    )
+
+    
+
     # Mostrar el resumen con mayor detalle
     classifier.summary()
     
@@ -145,7 +156,7 @@ if __name__ == "__main__":
     )
     
     # Modificar la compilación para usar un learning rate más bajo
-    optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+    optimizer = tf.keras.optimizers.Adam(learning_rate=0.0001)
     classifier.compile(optimizer=optimizer, 
                       loss='categorical_crossentropy', 
                       metrics=['accuracy', tf.keras.metrics.TopKCategoricalAccuracy(k=3)])
@@ -167,11 +178,11 @@ if __name__ == "__main__":
     print(f"\nForma del encoder output: {classifier.layers[1].output_shape}")  # El encoder es la segunda capa
     print(f"Número total de parámetros entrenables: {np.sum([K.count_params(w) for w in classifier.trainable_weights])}")
     
+    train_generator = datagen.flow(x_train, y_train, batch_size=32)
     # Modificar el entrenamiento para usar data augmentation
     classifier.fit(
-        x_train,  # Aplicar data augmentation
-        y_train,
-        epochs=100,
+        train_generator,  # Aplicar data augmentation
+        epochs=500,
         validation_data=(x_val, y_val),
         callbacks=[early_stopping, reduce_lr],
         batch_size=32,

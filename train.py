@@ -1,9 +1,13 @@
 import tensorflow as tf
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, UpSampling2D, Input
+from tensorflow.keras.layers import Conv2D, Conv2DTranspose, BatchNormalization, Activation, MaxPooling2D, Input
 from tensorflow.keras.models import Model
 import cv2
 import os
 import numpy as np
+import tensorflow.image as tfimg
+
+def ssim_loss(y_true, y_pred):
+    return 1 - tfimg.ssim(y_true, y_pred, max_val=1.0)
 
 def encoder(x, filter_list, activation="relu"):
     h1 = Conv2D(filter_list[0], (3, 3), activation=activation, padding="same")(x)
@@ -17,15 +21,24 @@ def encoder(x, filter_list, activation="relu"):
     return code
 
 def decoder(x, filter_list, activation="relu"):
-    h1 = Conv2D(filter_list[0], (3, 3), activation=activation, padding="same")(x)
-    u1 = UpSampling2D((2,2))(h1)
-    h2 = Conv2D(filter_list[1], (3, 3), activation=activation, padding="same")(u1)
-    u2 = UpSampling2D((2,2))(h2)
-    h3 = Conv2D(filter_list[2], (3, 3), activation=activation, padding="same")(u2)
-    u3 = UpSampling2D((2,2))(h3)
-    h4 = Conv2D(filter_list[3], (3, 3), activation=activation, padding="same")(u3)
-    u4 = UpSampling2D((2,2))(h4)
-    y  = Conv2D(1, (4, 4), activation='linear', padding="same")(u4)
+    h1 = Conv2DTranspose(filter_list[0], (3, 3), strides=(2, 2), padding="same")(x)
+    h1 = BatchNormalization()(h1)
+    h1 = Activation(activation)(h1)
+    
+    h2 = Conv2DTranspose(filter_list[1], (3, 3), strides=(2, 2), padding="same")(h1)
+    h2 = BatchNormalization()(h2)
+    h2 = Activation(activation)(h2)
+    
+    h3 = Conv2DTranspose(filter_list[2], (3, 3), strides=(2, 2), padding="same")(h2)
+    h3 = BatchNormalization()(h3)
+    h3 = Activation(activation)(h3)
+    
+    h4 = Conv2DTranspose(filter_list[3], (3, 3), strides=(2, 2), padding="same")(h3)
+    h4 = BatchNormalization()(h4)
+    h4 = Activation(activation)(h4)
+    
+    y  = Conv2D(1, (3, 3), activation='sigmoid', padding="same")(h4)
+    
     return y
 
 def create_autoencoder(dim0, dim1, filter_list, activation="relu"):
@@ -34,7 +47,7 @@ def create_autoencoder(dim0, dim1, filter_list, activation="relu"):
     decoder_filter_list = filter_list[::-1]
     x_pred = decoder(code, decoder_filter_list, activation)
     ae = Model(x, x_pred)
-    ae.compile(optimizer='adam', loss='mse')
+    ae.compile(optimizer='adam', loss=ssim_loss)
     return ae
 
 def get_data(path_base_datos, list_archivos_entrenamiento, list_archivos_validacion, dim0=None, dim1=None):

@@ -2,10 +2,10 @@ import tensorflow as tf
 import numpy as np
 import cv2
 import os
-from train import get_data  # Reutilizamos la función de carga de datos
+from train import get_data, ssim_loss
 
 # Cargar el modelo entrenado
-autoencoder = tf.keras.models.load_model('autoencoder.keras')
+autoencoder = tf.keras.models.load_model('autoencoder.keras', custom_objects={'ssim_loss': ssim_loss})
 
 # Parámetros
 dim0 = 320
