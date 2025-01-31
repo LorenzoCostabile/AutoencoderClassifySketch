@@ -5,11 +5,11 @@ import os
 from train import get_data, ssim_loss
 
 # Cargar el modelo entrenado
-autoencoder = tf.keras.models.load_model('autoencoder.keras', custom_objects={'ssim_loss': ssim_loss})
+autoencoder = tf.keras.models.load_model('autoencoder_smol.keras', custom_objects={'ssim_loss': ssim_loss})
 
 # Parámetros
-dim0 = 320
-dim1 = 320
+dim0 = 640
+dim1 = 640
 path_base_datos = "imagenes"
 
 # Cargar lista de archivos de test

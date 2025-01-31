@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras.layers import Conv2D, Conv2DTranspose, BatchNormalization, Activation, MaxPooling2D, Input
+from tensorflow.keras.layers import Conv2D, Conv2DTranspose, BatchNormalization, Activation, MaxPooling2D, Input, UpSampling2D
 from tensorflow.keras.models import Model
 import cv2
 import os
@@ -20,6 +20,31 @@ def encoder(x, filter_list, activation="relu"):
     code = MaxPooling2D((2,2))(h4)
     return code
 
+def decoder(x, filter_list):
+    # First upsampling block
+    h1 = UpSampling2D((2, 2))(x)
+    h1 = Conv2D(filter_list[0], (3, 3), padding="same")(h1)
+
+
+    # Second upsampling block
+    h2 = UpSampling2D((2, 2))(h1)
+    h2 = Conv2D(filter_list[1], (3, 3), padding="same")(h2)
+
+    # Third upsampling block
+    h3 = UpSampling2D((2, 2))(h2)
+    h3 = Conv2D(filter_list[2], (3, 3), padding="same")(h3)
+
+    # Fourth upsampling block
+    h4 = UpSampling2D((2, 2))(h3)
+    h4 = Conv2D(filter_list[3], (3, 3), padding="same")(h4)
+
+    # Final convolution
+    y = Conv2D(1, (3, 3), activation='sigmoid', padding="same")(h4)
+    
+    return y
+
+
+"""
 def decoder(x, filter_list, activation="relu"):
     h1 = Conv2DTranspose(filter_list[0], (3, 3), strides=(2, 2), padding="same")(x)
     h1 = BatchNormalization()(h1)
@@ -40,15 +65,21 @@ def decoder(x, filter_list, activation="relu"):
     y  = Conv2D(1, (3, 3), activation='sigmoid', padding="same")(h4)
     
     return y
+"""
 
-def create_autoencoder(dim0, dim1, filter_list, activation="relu"):
+
+
+def create_autoencoder(dim0, dim1, filter_list):
     x = Input(shape=(dim0, dim1, 1))
-    code = encoder(x, filter_list, activation)
+    code = encoder(x, filter_list, activation="relu")
     decoder_filter_list = filter_list[::-1]
-    x_pred = decoder(code, decoder_filter_list, activation)
+    x_pred = decoder(code, decoder_filter_list)
     ae = Model(x, x_pred)
-    ae.compile(optimizer='adam', loss=ssim_loss)
+    ae.compile(optimizer='adam', loss='mse')
+
     return ae
+
+
 
 def get_data(path_base_datos, list_archivos_entrenamiento, list_archivos_validacion, dim0=None, dim1=None):
     data_train = []
@@ -83,11 +114,11 @@ def get_data(path_base_datos, list_archivos_entrenamiento, list_archivos_validac
 
 if __name__ == "__main__":
     # Reducimos las dimensiones a 320x320 en lugar de 640x640
-    dim0 = 320
-    dim1 = 320
+    dim0 = 640
+    dim1 = 640
     
     # Reducimos el número de filtros
-    autoencoder = create_autoencoder(dim0=dim0, dim1=dim1, filter_list=[16, 32, 64, 128])
+    autoencoder = create_autoencoder(dim0=dim0, dim1=dim1, filter_list=[4, 7, 15, 27])
     autoencoder.summary()
     path_base_datos = "imagenes"
     lista_archivos_entrenamiento = []
@@ -106,4 +137,4 @@ if __name__ == "__main__":
     autoencoder.fit(data_train, data_train, epochs=100, batch_size=8, validation_data=(data_validacion, data_validacion))
 
     # Guardar el modelo entrenado
-    autoencoder.save('autoencoder.keras')
+    autoencoder.save('autoencoder_smol.keras')
